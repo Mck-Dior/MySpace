@@ -1,6 +1,4 @@
 **Name**: Divine Chinecherem Nnamdi
-**Matricule**: LMUI-24SWE287
-
 
 # PropSpace - Property Listing Application
 
