@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useContext } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import api from '../api/api';
 import { AuthContext } from '../context/AuthContext';
-import { User, Phone, Mail, Camera, Save, Lock } from 'lucide-react';
+import { User, Save } from 'lucide-react';
 
 const Profile = () => {
-    const { user, login } = useContext(AuthContext);
+    const { login } = useContext(AuthContext);
     const [formData, setFormData] = useState({ 
         username: '', 
         phone: '', 
@@ -54,7 +54,7 @@ const Profile = () => {
             <div className="glass" style={{ padding: '2.5rem' }}>
                 <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
                     <div style={{ position: 'relative', display: 'inline-block' }}>
-                        <div style={{ width: '100px', height: '100px', borderRadius: '50%', background: '#1e293b', display: 'flex', justifyContent: 'center', alignItems: 'center', border: '2px solid #10b981', overflow: 'hidden' }}>
+                        <div style={{ width: '100px', height: '100px', borderRadius: '50%', background: '#1e293b', display: 'flex', justifyContent: 'center', alignItems: 'center', border: '2px solid #3b82f6', overflow: 'hidden' }}>
                             {formData.avatar ? (
                                 <img src={formData.avatar} alt="Avatar" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             ) : (
@@ -67,7 +67,7 @@ const Profile = () => {
                 </div>
 
                 {error && <div style={{ background: '#ef444422', color: '#ef4444', padding: '0.75rem', borderRadius: '0.5rem', marginBottom: '1.5rem', border: '1px solid #ef444444' }}>{error}</div>}
-                {success && <div style={{ background: '#10b98122', color: '#10b981', padding: '0.75rem', borderRadius: '0.5rem', marginBottom: '1.5rem', border: '1px solid #10b98144' }}>{success}</div>}
+                {success && <div style={{ background: '#3b82f622', color: '#3b82f6', padding: '0.75rem', borderRadius: '0.5rem', marginBottom: '1.5rem', border: '1px solid #3b82f644' }}>{success}</div>}
 
                 <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
