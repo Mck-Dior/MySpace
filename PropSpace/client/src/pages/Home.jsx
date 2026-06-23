@@ -81,24 +81,7 @@ const Home = () => {
                     width: '100%',
                     maxWidth: '1200px'
                 }}>
-                    <span style={{ 
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '0.5rem',
-                        background: 'rgba(59, 130, 246, 0.15)', 
-                        color: 'var(--primary)', 
-                        padding: '0.5rem 1.25rem', 
-                        borderRadius: '2rem', 
-                        fontSize: '0.875rem',
-                        fontWeight: 600, 
-                        marginBottom: '1.5rem',
-                        backdropFilter: 'blur(10px)',
-                        border: '1px solid rgba(59, 130, 246, 0.3)',
-                        letterSpacing: '0.05em',
-                        textTransform: 'uppercase'
-                    }}>
-                        <Sparkles size={16} /> Premium Real Estate Platform
-                    </span>
+
                     
                     <h1 style={{ 
                         fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', 
@@ -109,7 +92,7 @@ const Home = () => {
                         color: '#ffffff',
                         textShadow: '0 4px 20px rgba(0,0,0,0.3)'
                     }}>
-                        Discover Your <span style={{ color: 'var(--primary)' }}>Perfect Space</span>
+                        Find the Perfect Place to <span style={{ color: 'var(--primary)' }}>Call Home</span>
                     </h1>
                     
                     <p style={{ 
@@ -120,7 +103,7 @@ const Home = () => {
                         lineHeight: '1.6',
                         textShadow: '0 2px 10px rgba(0,0,0,0.2)'
                     }}>
-                        Explore our curated collection of premium properties, luxury apartments, and modern studios across the globe.
+                        Look through our list of beautiful houses and apartments to find the best place for you to live.
                     </p>
 
                     {/* Search Container */}
